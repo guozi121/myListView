@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EED5B7">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/showtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:autoLink="none"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTodaythings"
+                android:text="自定义List条目, 并且点击条目有消息映射"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_height="2px"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:layout_width="fill_parent">
+            </View>
+
+            <com.listview.scrolllistview.LinearLayoutForListView
+                android:orientation="vertical"
+                android:layout_width="450px"
+                android:layout_height="fill_parent"
+                android:id="@+id/ListView01">
+            </com.listview.scrolllistview.LinearLayoutForListView>
+
+            <View
+                android:layout_height="2px"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:layout_width="fill_parent">
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTodaything"
+                android:text="哈哈，解决了滚动条冲突的问题！\n非常期待和感谢您的投票！！（详见Self_ListView.java文件代码中的注释行)"
+                android:textSize="18sp"/>
+
+            <RatingBar android:id="@+id/ratingbar_tired"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_marginLeft="5dip"
+                android:layout_marginBottom="300dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5.0"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showmottoLines"
+                android:text=""
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView >
+
+    <Button android:layout_width="wrap_content"
+        android:id="@+id/btnpreday"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@layout/scrolllistview"
+        android:text="前一天">
+    </Button>
+    <Button android:layout_width="wrap_content"
+        android:id="@+id/btnmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="false"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@layout/scrolllistview"
+        android:text="  菜 单   ">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnnextday"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@layout/scrolllistview"
+        android:text="后一天">
+    </Button>
+
+</RelativeLayout>

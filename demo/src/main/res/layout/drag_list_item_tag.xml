@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#555555"
+    android:padding="5dip"
+    android:paddingLeft="10dip">
+    <!--文本框的ID保持不变-->
+    <TextView
+        android:id="@+id/drag_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"/>
+    <!--去除来右边拖拽图像，分组标签是不能随意拖动的-->
+</LinearLayout>
